@@ -1,0 +1,36 @@
+name: Auto Update IPTV Playlist
+
+on:
+  schedule:
+    # Berjalan setiap hari pada jam 00:00 UTC (07:00 WIB)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Mengizinkan trigger manual dari tombol di GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Scraper and Checker
+      run: python main.py
+
+    - name: Commit and Push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add playlist.m3u
+        # Hanya commit jika ada perubahan pada file playlist.m3u
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update playlist [skip ci]" && git push)
