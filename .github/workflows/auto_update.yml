@@ -2,9 +2,12 @@ name: Auto Update IPTV Playlist
 
 on:
   schedule:
-    # Berjalan setiap hari pada jam 00:00 UTC (07:00 WIB)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Mengizinkan trigger manual dari tombol di GitHub
+  workflow_dispatch:
+
+# TAMBAHKAN BLOK INI
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -32,5 +35,4 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add playlist.m3u
-        # Hanya commit jika ada perubahan pada file playlist.m3u
         git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update playlist [skip ci]" && git push)
