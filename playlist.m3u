@@ -147,6 +147,9 @@ https://cdnbal1.indihometv.com/atm/DASH/sctv/sctv-avc1_2500000=7-327770703000000
 #EXTINF:-1 tvg-id="SCTV.id" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/sctv.jpg" group-title="INDONESIA TV",SCTV (VDO)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://tvratu.my.id/vid/index.mpd?id=204&type=dash
+#EXTINF:-1 tvg-id="Indosiar.id" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/indosiar.jpg" group-title="INDONESIA TV",INDOSIAR (MAX)
+#EXTVLCOPT:http-user-agent=IndiHomeTV/8.7.12 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
+https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar-avc1_2500000=7-3277707030000000.mpd
 #EXTINF:-1 tvg-id="Indosiar.id" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/indosiar.jpg" group-title="INDONESIA TV",INDOSIAR (VDO)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36
 https://tvratu.my.id/vid/index.mpd?id=205&type=dash
@@ -245,9 +248,6 @@ https://cdnbal1.indihometv.com/atm/DASH/JAK_TV/JAK_TV-avc1_2500000=7-32777070300
 #EXTINF:-1 tvg-id="Jaktv.id" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/jaktv.jpg" group-title="INDONESIA TV",JAKTV (DNS)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36
 https://op-flashcon-digdayahd-1.dens.tv/h/h218/index.m3u8?app_type=web&userid=lite&chname=Jak_tv
-#EXTINF:-1 tvg-id="Nusantara.TV.id" tvg-name="Nusantara TV" tvg-logo="https://mimipipi22.github.io/logo/nasional/nusantaratv.jpg" group-title="INDONESIA TV",NUSANTARA TV (FEED)
-#EXTVLCOPT:http-user-agent=ExoPlayer/2.19.1 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Nusantara.TV.id" tvg-name="Nusantara TV" tvg-logo="https://mimipipi22.github.io/logo/nasional/nusantaratv.jpg" group-title="INDONESIA TV",NUSANTARA TV (DNS)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
 https://op-flashcon-digdayahd-1.dens.tv/h/h37/index.m3u8?app_type=web&userid=lite&chname=Nusantara_TV_NTV-
@@ -368,9 +368,6 @@ https://op-flashcon-digdayahd-1.dens.tv/h/h10/index.m3u8
 #EXTINF:-1 tvg-id="RTV.id" tvg-logo="https://thumbor.prod.vidiocdn.com/cStgoV5oqj2Om_6NMOzK0AFY-sg=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/1561/665aea.png" group-title="Indonesia Channels",RTV (Vidio)
 #EXTVLCOPT:http-origin=https://www.vidio.com
 https://beetv.my.id/stream/vd.m3u8?ch=rtv
-#EXTINF:-1 tvg-id="NusantaraTV.id" tvg-logo="https://thumbor.prod.vidiocdn.com/npPL9VlWMJ5owmeupR7ucPjdGl4=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/7432/bfecbc.png" group-title="Indonesia Channels",Nusantara TV (ChannelFeed)
-#EXTVLCOPT:http-referrer=https://cdn.siar.us/
-https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Antara.id" tvg-name="Antara TV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Antara_%28news_agency%29_logo.svg/1280px-Antara_%28news_agency%29_logo.svg.png" group-title="Indonesia Channels",Antara TV
 https://cdnbal1.indihometv.com/atm/DASH/antara/antara-avc1_2500000=7-3277707030000000.mpd
 #EXTINF:-1 group-title="Indonesia Channels" tvg-id="IDX.id" tvg-logo="https://www.mncvision.id/userfiles/image/channel/iBcm_IDX.jpg",IDX (V+)
